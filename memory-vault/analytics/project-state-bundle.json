@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T10:17:36.128178+00:00",
+  "generated_at": "2026-05-22T10:32:01.117971+00:00",
   "environment": {
     "python_version": "3.11.11",
     "platform": "linux",
-    "timestamp": "2026-05-22T10:17:36.128178+00:00",
+    "timestamp": "2026-05-22T10:32:01.117971+00:00",
     "node": "v22.16.0",
     "npm": "10.9.2",
     "firebase": "15.1.0",
@@ -12,6 +12,7 @@
   "git": {
     "branch": "main",
     "recent_commits": [
+      "9ebac27 fix(pre-commit): Install eslint and configure for Next.js",
       "820bdd4 refactor(dev-env): unify package scripts and isolate pre-commit hook boundaries",
       "d8d64d3 chore(dev-env): force commit to break lint-staged loop and restore next lint core",
       "25064a0 feat: initial project scaffold with Aether Forge app, skills, and memory vault",
@@ -53,68 +54,19 @@
   },
   "tasks": {
     "completed": [
-      "Task 0: Initialize Firebase Console Projects Panel Rules.",
-      "Task 1: Initialize local application layer configuration files.",
-      "Task 2: Build the core Math-Native client hooks for viewport parsing (`useCanvasViewport.ts`).",
-      "Task 3: Embed real-time cursor presence tracking across Firebase RTDB lines (`useRealtimePresence.ts`).",
-      "STAGE 01 :: Infrastructure Sync & Cloud Alignment -> Completed",
-      "STAGE 04 :: Environment & Tooling Fortification -> See `./memory-vault/stage_outputs/04_env_success.txt`",
-      "STAGE 05 :: Code Quality & Consistency Gateway -> Target: ESLint/Prettier Config Files",
-      "STAGE 07 :: AI Agent Skillset Evolution -> Target: lint-and-format skill + updated project-analyzer"
+      "Task 0: Initialize Firebase Firewall Axiom Protocols.",
+      "Task 1: Verify local application layer package declarations.",
+      "Task 2: Build hardware-accelerated panning matrix calculus structures.",
+      "Task 3: Embed real-time pointer presence streams over Firebase channels."
     ],
     "pending": [
-      "STAGE 06 :: Custom Viewport Transformation Calculus -> Target Hook: `useCanvasViewport.ts`",
-      "STAGE 07 :: Throttled Multi-User Collaborative Presence Channel -> Target Hook: `useRealtimePresence.ts`",
-      "STAGE 08 :: Parent Stage Mesh Container Assembly -> Target Interface: `CanvasMainStage.tsx`"
+      "Task 4: Connect interactive display UI views to query rows from `project-instructions.db`."
     ],
-    "stages": [
-      {
-        "id": 1,
-        "title": "Infrastructure Sync & Cloud Alignment",
-        "status": "Completed",
-        "done": true
-      },
-      {
-        "id": 4,
-        "title": "Environment & Tooling Fortification",
-        "status": "See `./memory-vault/stage_outputs/04_env_success.txt`",
-        "done": true
-      },
-      {
-        "id": 5,
-        "title": "Code Quality & Consistency Gateway",
-        "status": "Target: ESLint/Prettier Config Files",
-        "done": true
-      },
-      {
-        "id": 7,
-        "title": "AI Agent Skillset Evolution",
-        "status": "Target: lint-and-format skill + updated project-analyzer",
-        "done": true
-      },
-      {
-        "id": 6,
-        "title": "Custom Viewport Transformation Calculus",
-        "status": "Target Hook: `useCanvasViewport.ts`",
-        "done": false
-      },
-      {
-        "id": 7,
-        "title": "Throttled Multi-User Collaborative Presence Channel",
-        "status": "Target Hook: `useRealtimePresence.ts`",
-        "done": false
-      },
-      {
-        "id": 8,
-        "title": "Parent Stage Mesh Container Assembly",
-        "status": "Target Interface: `CanvasMainStage.tsx`",
-        "done": false
-      }
-    ]
+    "stages": []
   },
   "file_inventory": {
-    "total_count": 52,
-    "total_size_bytes": 149501,
+    "total_count": 50,
+    "total_size_bytes": 145122,
     "files": [
       {
         "path": ".geminiignore",
@@ -128,17 +80,12 @@
       },
       {
         "path": ".lintstagedrc.js",
-        "size_bytes": 171,
+        "size_bytes": 121,
         "ext": ".js"
       },
       {
         "path": "AGENTS.md",
         "size_bytes": 3573,
-        "ext": ".md"
-      },
-      {
-        "path": "CLAUDE.md",
-        "size_bytes": 2618,
         "ext": ".md"
       },
       {
@@ -162,11 +109,6 @@
         "ext": ".json"
       },
       {
-        "path": "opencode.json.tui-migration.bak",
-        "size_bytes": 212,
-        "ext": ".bak"
-      },
-      {
         "path": "package.json",
         "size_bytes": 449,
         "ext": ".json"
@@ -188,7 +130,7 @@
       },
       {
         "path": "memory-vault/todo.md",
-        "size_bytes": 3872,
+        "size_bytes": 1580,
         "ext": ".md"
       },
       {
@@ -198,7 +140,7 @@
       },
       {
         "path": "memory-vault/analytics/project-state-bundle.json",
-        "size_bytes": 11435,
+        "size_bytes": 11905,
         "ext": ".json"
       },
       {
@@ -328,7 +270,7 @@
       },
       {
         "path": "aether-forge-app/src/app/database/page.tsx",
-        "size_bytes": 3181,
+        "size_bytes": 3504,
         "ext": ".tsx"
       },
       {
@@ -379,9 +321,9 @@
     ]
   },
   "gitnexus": {
-    "files": 43,
-    "nodes": 295,
-    "edges": 315,
+    "files": 41,
+    "nodes": 281,
+    "edges": 303,
     "communities": 9,
     "processes": 1,
     "embeddings": 0
