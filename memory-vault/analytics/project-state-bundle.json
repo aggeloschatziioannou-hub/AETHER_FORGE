@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T10:07:48.178266+00:00",
+  "generated_at": "2026-05-22T10:17:36.128178+00:00",
   "environment": {
     "python_version": "3.11.11",
     "platform": "linux",
-    "timestamp": "2026-05-22T10:07:48.178266+00:00",
+    "timestamp": "2026-05-22T10:17:36.128178+00:00",
     "node": "v22.16.0",
     "npm": "10.9.2",
     "firebase": "15.1.0",
@@ -12,6 +12,7 @@
   "git": {
     "branch": "main",
     "recent_commits": [
+      "820bdd4 refactor(dev-env): unify package scripts and isolate pre-commit hook boundaries",
       "d8d64d3 chore(dev-env): force commit to break lint-staged loop and restore next lint core",
       "25064a0 feat: initial project scaffold with Aether Forge app, skills, and memory vault",
       "74dcaba Initialized workspace with Firebase Studio"
@@ -29,23 +30,25 @@
       "format:fix": "prettier --write \"src/**/*.{ts,tsx,md}\""
     },
     "dependencies": [
+      "firebase",
+      "lucide-react",
       "next",
       "react",
       "react-dom",
-      "firebase",
-      "typescript",
+      "sqlite",
+      "sqlite3",
       "tailwindcss",
-      "lucide-react"
+      "typescript"
     ],
     "devDependencies": [
       "@types/node",
       "@types/react",
       "@types/react-dom",
-      "prettier",
-      "vitest",
-      "jsdom",
       "husky",
-      "lint-staged"
+      "jsdom",
+      "lint-staged",
+      "prettier",
+      "vitest"
     ]
   },
   "tasks": {
@@ -110,8 +113,8 @@
     ]
   },
   "file_inventory": {
-    "total_count": 50,
-    "total_size_bytes": 145204,
+    "total_count": 52,
+    "total_size_bytes": 149501,
     "files": [
       {
         "path": ".geminiignore",
@@ -195,7 +198,7 @@
       },
       {
         "path": "memory-vault/analytics/project-state-bundle.json",
-        "size_bytes": 11439,
+        "size_bytes": 11435,
         "ext": ".json"
       },
       {
@@ -285,7 +288,7 @@
       },
       {
         "path": "aether-forge-app/package.json",
-        "size_bytes": 841,
+        "size_bytes": 939,
         "ext": ".json"
       },
       {
@@ -322,6 +325,16 @@
         "path": "aether-forge-app/src/app/page.tsx",
         "size_bytes": 1817,
         "ext": ".tsx"
+      },
+      {
+        "path": "aether-forge-app/src/app/database/page.tsx",
+        "size_bytes": 3181,
+        "ext": ".tsx"
+      },
+      {
+        "path": "aether-forge-app/src/app/api/instructions/route.ts",
+        "size_bytes": 1022,
+        "ext": ".ts"
       },
       {
         "path": "aether-forge-app/src/hooks/useCanvasViewport.ts",
@@ -366,9 +379,9 @@
     ]
   },
   "gitnexus": {
-    "files": 41,
-    "nodes": 285,
-    "edges": 306,
+    "files": 43,
+    "nodes": 295,
+    "edges": 315,
     "communities": 9,
     "processes": 1,
     "embeddings": 0
