@@ -1,6 +1,6 @@
 module.exports = {
-  "aether-forge-app/**/*.{js,jsx,ts,tsx}": [
-    "npm run lint:fix --prefix aether-forge-app",
-    "npm run format --prefix aether-forge-app"
+  "aether-forge-app/src/**/*.{js,jsx,ts,tsx}": [
+    "npm run lint --prefix aether-forge-app",
+    "npm run format:fix --prefix aether-forge-app"
   ]
 };

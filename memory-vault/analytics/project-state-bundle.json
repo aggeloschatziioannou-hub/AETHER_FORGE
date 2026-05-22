@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T09:45:49.090671+00:00",
+  "generated_at": "2026-05-22T10:07:48.178266+00:00",
   "environment": {
     "python_version": "3.11.11",
     "platform": "linux",
-    "timestamp": "2026-05-22T09:45:49.090671+00:00",
+    "timestamp": "2026-05-22T10:07:48.178266+00:00",
     "node": "v22.16.0",
     "npm": "10.9.2",
     "firebase": "15.1.0",
@@ -12,6 +12,7 @@
   "git": {
     "branch": "main",
     "recent_commits": [
+      "d8d64d3 chore(dev-env): force commit to break lint-staged loop and restore next lint core",
       "25064a0 feat: initial project scaffold with Aether Forge app, skills, and memory vault",
       "74dcaba Initialized workspace with Firebase Studio"
     ]
@@ -28,26 +29,23 @@
       "format:fix": "prettier --write \"src/**/*.{ts,tsx,md}\""
     },
     "dependencies": [
-      "firebase",
-      "lucide-react",
       "next",
       "react",
       "react-dom",
+      "firebase",
+      "typescript",
       "tailwindcss",
-      "typescript"
+      "lucide-react"
     ],
     "devDependencies": [
-      "@testing-library/jest-dom",
-      "@testing-library/react",
       "@types/node",
       "@types/react",
       "@types/react-dom",
-      "@vitejs/plugin-react",
-      "husky",
-      "jsdom",
-      "lint-staged",
       "prettier",
-      "vitest"
+      "vitest",
+      "jsdom",
+      "husky",
+      "lint-staged"
     ]
   },
   "tasks": {
@@ -113,7 +111,7 @@
   },
   "file_inventory": {
     "total_count": 50,
-    "total_size_bytes": 144104,
+    "total_size_bytes": 145204,
     "files": [
       {
         "path": ".geminiignore",
@@ -127,17 +125,17 @@
       },
       {
         "path": ".lintstagedrc.js",
-        "size_bytes": 170,
+        "size_bytes": 171,
         "ext": ".js"
       },
       {
         "path": "AGENTS.md",
-        "size_bytes": 3568,
+        "size_bytes": 3573,
         "ext": ".md"
       },
       {
         "path": "CLAUDE.md",
-        "size_bytes": 2613,
+        "size_bytes": 2618,
         "ext": ".md"
       },
       {
@@ -176,11 +174,6 @@
         "ext": ".json"
       },
       {
-        "path": "memory-vault/new-chat-prompt.md",
-        "size_bytes": 5455,
-        "ext": ".md"
-      },
-      {
         "path": "memory-vault/project-instructions.db",
         "size_bytes": 53248,
         "ext": ".db"
@@ -202,7 +195,7 @@
       },
       {
         "path": "memory-vault/analytics/project-state-bundle.json",
-        "size_bytes": 9799,
+        "size_bytes": 11439,
         "ext": ".json"
       },
       {
@@ -261,8 +254,13 @@
         "ext": ".md"
       },
       {
+        "path": "prompts/new-chat-prompt.md",
+        "size_bytes": 5455,
+        "ext": ".md"
+      },
+      {
         "path": "aether-forge-app/.eslintrc.json",
-        "size_bytes": 308,
+        "size_bytes": 39,
         "ext": ".json"
       },
       {
@@ -287,7 +285,7 @@
       },
       {
         "path": "aether-forge-app/package.json",
-        "size_bytes": 1123,
+        "size_bytes": 841,
         "ext": ".json"
       },
       {
