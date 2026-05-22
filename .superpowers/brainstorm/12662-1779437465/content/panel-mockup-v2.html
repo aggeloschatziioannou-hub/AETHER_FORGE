@@ -1,0 +1,85 @@
+<h2>DB Explorer Panel — v2 (Better Contrast)</h2>
+<p class="subtitle">Draggable · Resizable · Lazy activation</p>
+
+<div class="mockup" style="max-width:700px;margin:24px auto">
+  <div class="mockup-header">DB Explorer :: project-instructions.db</div>
+  
+  <div style="display:flex;min-height:320px">
+    
+    <!-- Left sidebar - table list -->
+    <div style="width:200px;border-right:1px solid #e5e7eb;flex-shrink:0;background:#f9fafb">
+      <div style="padding:10px 14px;font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #e5e7eb">
+        Tables
+      </div>
+      <div style="background:#eff6ff;border-left:3px solid #2563eb">
+        <div style="padding:8px 14px;display:flex;justify-content:space-between;font-size:13px">
+          <span style="font-weight:600;color:#1f2937">instructions</span>
+          <span style="color:#9ca3af">26</span>
+        </div>
+      </div>
+      <div>
+        <div style="padding:8px 14px;display:flex;justify-content:space-between;font-size:13px">
+          <span style="color:#374151">evolution</span>
+          <span style="color:#9ca3af">7</span>
+        </div>
+      </div>
+      
+      <div style="padding:10px 14px;font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;border-top:1px solid #e5e7eb;margin-top:8px">
+        Actions
+      </div>
+      <div style="padding:7px 14px;font-size:12px;color:#4b5563;cursor:pointer">➕ Connect new DB</div>
+      <div style="padding:7px 14px;font-size:12px;color:#4b5563;cursor:pointer">📂 Open SQLite file</div>
+      <div style="padding:7px 14px;font-size:12px;color:#4b5563;cursor:pointer">🔄 Refresh schema</div>
+    </div>
+    
+    <!-- Right panel - schema view -->
+    <div style="flex:1;display:flex;flex-direction:column;background:#ffffff">
+      
+      <!-- Table header -->
+      <div style="padding:12px 16px;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <span style="font-size:15px;font-weight:600;color:#111827">instructions</span>
+          <span style="font-size:11px;color:#6b7280;margin-left:8px">26 rows</span>
+        </div>
+        <div style="display:flex;gap:6px">
+          <span style="font-size:10px;padding:2px 8px;border-radius:4px;background:#dcfce7;color:#166534">PK</span>
+          <span style="font-size:10px;padding:2px 8px;border-radius:4px;background:#f3f4f6;color:#6b7280">3 cols</span>
+        </div>
+      </div>
+      
+      <!-- Column headers -->
+      <div style="display:grid;grid-template-columns:1fr 1fr 100px;gap:8px;padding:8px 16px;font-size:11px;color:#6b7280;border-bottom:1px solid #e5e7eb;background:#f9fafb">
+        <span>Column</span>
+        <span>Type</span>
+        <span>Nullable</span>
+      </div>
+      
+      <!-- Column rows -->
+      <div style="display:grid;grid-template-columns:1fr 1fr 100px;gap:8px;padding:10px 16px;font-size:13px;color:#374151;border-bottom:1px solid #f3f4f6">
+        <span><span style="color:#2563eb;font-weight:600">section</span> 🔑</span>
+        <span style="color:#6b7280">TEXT</span>
+        <span style="color:#9ca3af">NOT NULL</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 100px;gap:8px;padding:10px 16px;font-size:13px;color:#374151;border-bottom:1px solid #f3f4f6">
+        <span style="color:#2563eb;font-weight:600">content</span>
+        <span style="color:#6b7280">TEXT</span>
+        <span style="color:#9ca3af">NOT NULL</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 100px;gap:8px;padding:10px 16px;font-size:13px;color:#374151">
+        <span style="color:#2563eb;font-weight:600">updated_at</span>
+        <span style="color:#6b7280">TEXT</span>
+        <span style="color:#9ca3af">YES</span>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="mockup-footer" style="padding:6px 16px;font-size:10px;color:#9ca3af;display:flex;justify-content:space-between;border-top:1px solid #e5e7eb;background:#f9fafb">
+    <span>Connected via MCP Proxy (FastAPI)</span>
+    <span>● Idle — no active queries</span>
+  </div>
+</div>
+
+<div class="section" style="margin-top:16px;text-align:center;font-size:13px;color:#6b7280">
+  Panel sits on infinite canvas · Drag to move · Drag corners to resize · Auto-sleeps when not focused
+</div>

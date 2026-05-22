@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T07:59:45.073808+00:00",
+  "generated_at": "2026-05-22T09:45:49.090671+00:00",
   "environment": {
     "python_version": "3.11.11",
     "platform": "linux",
-    "timestamp": "2026-05-22T07:59:45.073808+00:00",
+    "timestamp": "2026-05-22T09:45:49.090671+00:00",
     "node": "v22.16.0",
     "npm": "10.9.2",
     "firebase": "15.1.0",
@@ -12,6 +12,7 @@
   "git": {
     "branch": "main",
     "recent_commits": [
+      "25064a0 feat: initial project scaffold with Aether Forge app, skills, and memory vault",
       "74dcaba Initialized workspace with Firebase Studio"
     ]
   },
@@ -27,19 +28,26 @@
       "format:fix": "prettier --write \"src/**/*.{ts,tsx,md}\""
     },
     "dependencies": [
+      "firebase",
+      "lucide-react",
       "next",
       "react",
       "react-dom",
-      "firebase",
-      "typescript",
       "tailwindcss",
-      "lucide-react"
+      "typescript"
     ],
     "devDependencies": [
+      "@testing-library/jest-dom",
+      "@testing-library/react",
       "@types/node",
       "@types/react",
       "@types/react-dom",
-      "prettier"
+      "@vitejs/plugin-react",
+      "husky",
+      "jsdom",
+      "lint-staged",
+      "prettier",
+      "vitest"
     ]
   },
   "tasks": {
@@ -104,8 +112,8 @@
     ]
   },
   "file_inventory": {
-    "total_count": 39,
-    "total_size_bytes": 131095,
+    "total_count": 50,
+    "total_size_bytes": 144104,
     "files": [
       {
         "path": ".geminiignore",
@@ -118,8 +126,13 @@
         "ext": ""
       },
       {
+        "path": ".lintstagedrc.js",
+        "size_bytes": 170,
+        "ext": ".js"
+      },
+      {
         "path": "AGENTS.md",
-        "size_bytes": 954,
+        "size_bytes": 3568,
         "ext": ".md"
       },
       {
@@ -154,7 +167,7 @@
       },
       {
         "path": "package.json",
-        "size_bytes": 367,
+        "size_bytes": 449,
         "ext": ".json"
       },
       {
@@ -189,7 +202,7 @@
       },
       {
         "path": "memory-vault/analytics/project-state-bundle.json",
-        "size_bytes": 8259,
+        "size_bytes": 9799,
         "ext": ".json"
       },
       {
@@ -243,6 +256,11 @@
         "ext": ".py"
       },
       {
+        "path": "prompts/gemini-env-audit-prompt.md",
+        "size_bytes": 2682,
+        "ext": ".md"
+      },
+      {
         "path": "aether-forge-app/.eslintrc.json",
         "size_bytes": 308,
         "ext": ".json"
@@ -269,7 +287,7 @@
       },
       {
         "path": "aether-forge-app/package.json",
-        "size_bytes": 871,
+        "size_bytes": 1123,
         "ext": ".json"
       },
       {
@@ -278,9 +296,24 @@
         "ext": ".json"
       },
       {
+        "path": "aether-forge-app/vitest.config.ts",
+        "size_bytes": 350,
+        "ext": ".ts"
+      },
+      {
+        "path": "aether-forge-app/vitest.setup.ts",
+        "size_bytes": 36,
+        "ext": ".ts"
+      },
+      {
         "path": "aether-forge-app/src/wdyr.ts",
         "size_bytes": 264,
         "ext": ".ts"
+      },
+      {
+        "path": "aether-forge-app/src/__tests__/smoke.test.tsx",
+        "size_bytes": 148,
+        "ext": ".tsx"
       },
       {
         "path": "aether-forge-app/src/app/layout.tsx",
@@ -301,13 +334,43 @@
         "path": "aether-forge-app/src/hooks/useRealtimePresence.ts",
         "size_bytes": 2564,
         "ext": ".ts"
+      },
+      {
+        "path": "APP_BUIDLING_PARTS/db-dashboard/00-index.md",
+        "size_bytes": 1146,
+        "ext": ".md"
+      },
+      {
+        "path": "APP_BUIDLING_PARTS/db-dashboard/01-mcp-proxy.md",
+        "size_bytes": 1111,
+        "ext": ".md"
+      },
+      {
+        "path": "APP_BUIDLING_PARTS/db-dashboard/02-panel-system.md",
+        "size_bytes": 986,
+        "ext": ".md"
+      },
+      {
+        "path": "APP_BUIDLING_PARTS/db-dashboard/03-db-explorer-panel.md",
+        "size_bytes": 894,
+        "ext": ".md"
+      },
+      {
+        "path": "APP_BUIDLING_PARTS/db-dashboard/04-future-roadmap.md",
+        "size_bytes": 949,
+        "ext": ".md"
+      },
+      {
+        "path": "preferences/components/tool_bar.md",
+        "size_bytes": 49,
+        "ext": ".md"
       }
     ]
   },
   "gitnexus": {
-    "files": 32,
-    "nodes": 231,
-    "edges": 255,
+    "files": 41,
+    "nodes": 285,
+    "edges": 306,
     "communities": 9,
     "processes": 1,
     "embeddings": 0

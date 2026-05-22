@@ -1,0 +1,48 @@
+<h2>Architecture Overview</h2>
+<p class="subtitle">System components and data flow</p>
+
+<div class="section">
+  <div class="mockup" style="padding:24px;font-family:monospace;font-size:11px;line-height:2;text-align:center">
+    ┌─────────────────────────────────────────────────┐<br>
+    │  <strong>Browser — Aether_Forge Canvas (Next.js 15)</strong>      │<br>
+    │  ┌───────────┐ ┌──────────┐ ┌──────────┐       │<br>
+    │  │ Canvas    │ │ DB       │ │ Future   │       │<br>
+    │  │ Stage     │ │ Explorer │ │ Panels…  │       │<br>
+    │  └─────┬─────┘ └────┬─────┘ └────┬─────┘       │<br>
+    │        │            │            │              │<br>
+    │        └────────────┼────────────┘              │<br>
+    │                     │ REST/WS                    │<br>
+    └─────────────────────┼───────────────────────────┘<br>
+                          │<br>
+    ┌─────────────────────┼───────────────────────────┐<br>
+    │  <strong>Next.js API Routes (proxy)</strong>  │              │<br>
+    │  /api/proxy/*  ─────┼────  thin pass-through     │<br>
+    └─────────────────────┼───────────────────────────┘<br>
+                          │ HTTP<br>
+    ┌─────────────────────┼───────────────────────────┐<br>
+    │  <strong>Python FastAPI — MCP Proxy</strong>     │              │<br>
+    │  /api/db/tables     │                            │<br>
+    │  /api/db/schema     │                            │<br>
+    │  /api/db/query      │                            │<br>
+    │                     │                            │<br>
+    │  ┌──────────────┐   │   ┌───────────────────┐   │<br>
+    │  │ SQLite       │   │   │ MCP Server Conn.  │   │<br>
+    │  │ (direct)     │   │   │ (Postgres, MySQL…)│   │<br>
+    │  └──────┬───────┘   │   └────────┬──────────┘   │<br>
+    │         │           │            │              │<br>
+    └─────────┼───────────┼────────────┼──────────────┘<br>
+              │           │            │<br>
+         .db files    .db files   Remote DBs<br>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Key design decisions:</h3>
+  <ul style="font-size:13px;line-height:1.8">
+    <li><strong>Next.js routes proxy</strong> — Canvas panels talk to <code>/api/proxy/*</code>, not directly to Python. Avoids CORS, keeps auth in one place.</li>
+    <li><strong>FastAPI runs as sidecar</strong> — Started alongside <code>npm run dev</code> via a <code>start.sh</code>. Docker Compose ready later.</li>
+    <li><strong>SQLite direct</strong> — Python's built-in <code>sqlite3</code> for SQLite databases. No need for MCP for simple SQLite access.</li>
+    <li><strong>MCP for remote DBs</strong> — When you add PostgreSQL/MySQL support, proxy connects via MCP Python SDK.</li>
+    <li><strong>Lazy connections</strong> — Proxy only opens DB connections when a panel sends a request. Idle panels = zero connections.</li>
+  </ul>
+</div>

@@ -1,7 +1,7 @@
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **aetherforge** (231 symbols, 255 relationships, 1 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **AETHER_FORGE** (285 symbols, 306 relationships, 1 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -24,10 +24,10 @@ This project is indexed by GitNexus as **aetherforge** (231 symbols, 255 relatio
 
 | Resource | Use for |
 |----------|---------|
-| `gitnexus://repo/aetherforge/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/aetherforge/clusters` | All functional areas |
-| `gitnexus://repo/aetherforge/processes` | All execution flows |
-| `gitnexus://repo/aetherforge/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/AETHER_FORGE/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/AETHER_FORGE/clusters` | All functional areas |
+| `gitnexus://repo/AETHER_FORGE/processes` | All execution flows |
+| `gitnexus://repo/AETHER_FORGE/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 

@@ -1,0 +1,40 @@
+<h2>Architecture Approaches</h2>
+<p class="subtitle">Three ways to structure the system</p>
+
+<div class="section">
+  <h3>A — Direct SQLite (Simplest)</h3>
+  <div class="mockup" style="padding:16px;font-family:monospace;font-size:12px;line-height:1.6">
+    Canvas Panel → Next.js API Route → better-sqlite3 → .db file
+  </div>
+  <p>No separate backend. Next.js API routes read/write SQLite directly. MCP proxy runs Python subprocesses for non-SQLite DBs later.</p>
+  <div class="pros-cons">
+    <div class="pros"><h4>Pros</h4><ul><li>Zero extra processes</li><li>Fastest to build</li><li>Same deployment as app</li></ul></div>
+    <div class="cons"><h4>Cons</h4><ul><li>SQLite-only unless extended</li><li>Python not used</li></ul></div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>B — MCP Proxy (Recommended)</h3>
+  <div class="mockup" style="padding:16px;font-family:monospace;font-size:12px;line-height:1.6">
+    Canvas Panel → Next.js API Route → FastAPI Proxy → MCP Servers → .db files<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Direct SQLite → .db files
+  </div>
+  <p>Python FastAPI backend sits between the React frontend and databases. Panels never connect directly to DBs — they go through the proxy. Future panels reuse the same proxy for their own data needs.</p>
+  <div class="pros-cons">
+    <div class="pros"><h4>Pros</h4><ul><li>True to your vision C (any DB)</li><li>Python stack you wanted</li><li>Reusable for future panels</li><li>Panels stay stateless/light</li></ul></div>
+    <div class="cons"><h4>Cons</h4><ul><li>Extra process to manage</li><li>More code to write upfront</li></ul></div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>C — Full Monolith (FastAPI + embedded Next.js build)</h3>
+  <div class="mockup" style="padding:16px;font-family:monospace;font-size:12px;line-height:1.6">
+    FastAPI serves both API + static Next.js build.<br>
+    Single process. Single port. Single deploy.
+  </div>
+  <p>Next.js builds to static files, FastAPI serves them alongside the API. One process to start, one port to remember.</p>
+  <div class="pros-cons">
+    <div class="pros"><h4>Pros</h4><ul><li>Simplest deployment</li><li>Same Python stack everywhere</li></ul></div>
+    <div class="cons"><h4>Cons</h4><ul><li>Lose Next.js SSR/API routes</li><li>Next.js is better at frontend</li><li>Harder to develop (two build systems)</li></ul></div>
+  </div>
+</div>

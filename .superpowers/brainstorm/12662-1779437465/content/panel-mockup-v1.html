@@ -1,0 +1,67 @@
+<h2>DB Explorer Panel — Visual Mockup</h2>
+<p class="subtitle">A draggable, resizable panel on the infinite canvas</p>
+
+<div class="mockup" style="max-width:700px;margin:0 auto">
+  <div class="mockup-header">DB Explorer :: project-instructions.db</div>
+  <div class="mockup-body" style="display:flex;min-height:350px;padding:0">
+    <div class="left-panel" style="width:200px;border-right:1px solid rgba(255,255,255,0.06);flex-shrink:0">
+      <div style="padding:10px 12px;font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.5px">Tables</div>
+      <div class="table-item selected" style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.8);background:rgba(59,130,246,0.12);border-left:2px solid #3b82f6;cursor:pointer;display:flex;justify-content:space-between">
+        <span>instructions</span>
+        <span style="color:rgba(255,255,255,0.25);font-size:10px">26</span>
+      </div>
+      <div class="table-item" style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.6);cursor:pointer;display:flex;justify-content:space-between">
+        <span>evolution</span>
+        <span style="color:rgba(255,255,255,0.25);font-size:10px">7</span>
+      </div>
+      <div style="padding:10px 12px;font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:0.5px;border-top:1px solid rgba(255,255,255,0.06)">Actions</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.5);cursor:pointer">➕ Connect new DB</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.5);cursor:pointer">📂 Open SQLite file</div>
+      <div style="padding:7px 12px;font-size:12px;color:rgba(255,255,255,0.5);cursor:pointer">🔄 Refresh schema</div>
+    </div>
+    <div class="right-panel" style="flex:1;display:flex;flex-direction:column">
+      <div style="padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <span style="font-size:13px;font-weight:600;color:rgba(255,255,255,0.9)">instructions</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.3);margin-left:8px">26 rows</span>
+        </div>
+        <div style="display:flex;gap:6px">
+          <span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(34,197,94,0.15);color:#22c55e">PK</span>
+          <span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.4)">3 cols</span>
+        </div>
+      </div>
+      <div style="padding:8px 14px;display:grid;grid-template-columns:1fr 1fr 80px;gap:8px;font-size:10px;color:rgba(255,255,255,0.35);border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span>Column</span>
+        <span>Type</span>
+        <span>Nullable</span>
+      </div>
+      <div style="padding:0 14px;flex:1">
+        <div style="display:grid;grid-template-columns:1fr 1fr 80px;gap:8px;padding:7px 0;font-size:12px;color:rgba(255,255,255,0.7);border-bottom:1px solid rgba(255,255,255,0.04)">
+          <span><span style="color:#60a5fa">section</span> 🔑</span>
+          <span style="color:rgba(255,255,255,0.4)">TEXT</span>
+          <span style="color:rgba(255,255,255,0.3)">NOT NULL</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 80px;gap:8px;padding:7px 0;font-size:12px;color:rgba(255,255,255,0.7);border-bottom:1px solid rgba(255,255,255,0.04)">
+          <span style="color:#60a5fa">content</span>
+          <span style="color:rgba(255,255,255,0.4)">TEXT</span>
+          <span style="color:rgba(255,255,255,0.3)">NOT NULL</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 80px;gap:8px;padding:7px 0;font-size:12px;color:rgba(255,255,255,0.7)">
+          <span style="color:#60a5fa">updated_at</span>
+          <span style="color:rgba(255,255,255,0.4)">TEXT</span>
+          <span style="color:rgba(255,255,255,0.3)">YES</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mockup-footer" style="padding:6px 14px;font-size:10px;color:rgba(255,255,255,0.2);display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.04)">
+    <span>Connected via MCP Proxy</span>
+    <span>Inactive — no queries running</span>
+  </div>
+</div>
+
+<div class="section" style="margin-top:20px">
+  <p style="font-size:12px;color:rgba(255,255,255,0.4);text-align:center">
+    Panel is draggable · Resizable · Lazy — no DB queries when panel not active
+  </p>
+</div>

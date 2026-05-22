@@ -1,0 +1,41 @@
+<h2>Panel System</h2>
+<p class="subtitle">How widgets live on the infinite canvas</p>
+
+<div class="section">
+  <h3>Each panel is:</h3>
+  <ul style="font-size:13px;line-height:1.8">
+    <li><strong>A positioned div</strong> on the canvas — <code>position: absolute</code>, panned/zoomed with the viewport</li>
+    <li><strong>Draggable</strong> via header bar — click + drag to reposition</li>
+    <li><strong>Resizable</strong> via corner/edge handles — drag to resize</li>
+    <li><strong>Lazy-mounted</strong> — React component mounts only when panel is "active"</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>Lazy Activation System</h3>
+  <div class="mockup" style="padding:16px;font-family:monospace;font-size:12px;line-height:1.6">
+    Canvas state: [panX, panY, zoom, activePanelId]<br>
+    ┌─ Panel visible on screen? ──→ YES → Widget.tsx mounts, initializes<br>
+    │                                  connection to proxy<br>
+    │<br>
+    └─ Panel off-screen / minified? → Component unmounts →<br>
+       &nbsp;&nbsp;&nbsp;connection closes → zero resources<br>
+  </div>
+  <p style="margin-top:12px">If a panel is scrolled off-canvas or zoomed too far out to be useful, it unmounts entirely. The MCP proxy also closes idle DB connections after 60s of no requests.</p>
+</div>
+
+<div class="section">
+  <h3>Panel State Machine</h3>
+  <div class="mockup" style="padding:16px;font-family:monospace;font-size:12px;line-height:1.6">
+    Closed → Placed (position set) → Visible (on screen, mounted) →<br>
+    &nbsp;&nbsp;&nbsp;Active (user interacting) → Idle (60s timeout) →<br>
+    &nbsp;&nbsp;&nbsp;Off-screen (unmounted) → Closed<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+    &nbsp;&nbsp;&nbsp;Minimized (title bar only, no content)
+  </div>
+</div>
+
+<div class="section">
+  <h3>Panel registry</h3>
+  <p style="font-size:13px">A central registry defines available panel types. The user opens a panel from a toolbar/menu → it appears on the canvas at a default position. Position/size persisted in localStorage or project-instructions DB.</p>
+</div>
