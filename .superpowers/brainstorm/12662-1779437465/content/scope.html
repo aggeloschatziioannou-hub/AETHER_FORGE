@@ -1,0 +1,26 @@
+<h2>What databases do you want to manage?</h2>
+<p class="subtitle">Choose the scope for your DB management dashboard</p>
+
+<div class="options">
+  <div class="option" data-choice="project-only" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Just the project-instructions DB</h3>
+      <p>Read/edit the SQLite DB at <code>memory-vault/project-instructions.db</code>. Table viewer, query editor, CRUD on rows. Simple, focused tool.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="any-sqlite" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Any SQLite file</h3>
+      <p>File picker to open any <code>.db</code> file on the system. Table browser, SQL editor, row CRUD. Works like a local SQLite browser (DB Browser for SQLite lite).</p>
+    </div>
+  </div>
+  <div class="option" data-choice="any-database" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Any database via MCP</h3>
+      <p>Query any MCP-connected database (PostgreSQL, MySQL, SQLite). Dashboard becomes a universal query client for whatever MCPs are configured. Most flexible.</p>
+    </div>
+  </div>
+</div>

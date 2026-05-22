@@ -1,0 +1,33 @@
+<h2>DB Panel — first version capabilities</h2>
+<p class="subtitle">What should the initial panel support?</p>
+
+<div class="options" data-multiselect>
+  <div class="option" data-choice="tables" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>Table browser</h3>
+      <p>List all tables in a database, click to see schema</p>
+    </div>
+  </div>
+  <div class="option" data-choice="query" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>SQL query editor</h3>
+      <p>Type and run SQL queries, see results as a table</p>
+    </div>
+  </div>
+  <div class="option" data-choice="rows" onclick="toggleSelect(this)">
+    <div class="letter">3</div>
+    <div class="content">
+      <h3>Row viewer</h3>
+      <p>Browse rows with pagination, click to expand a row</p>
+    </div>
+  </div>
+  <div class="option" data-choice="edit" onclick="toggleSelect(this)">
+    <div class="letter">4</div>
+    <div class="content">
+      <h3>Inline editing</h3>
+      <p>Edit cell values, add rows, delete rows directly</p>
+    </div>
+  </div>
+</div>

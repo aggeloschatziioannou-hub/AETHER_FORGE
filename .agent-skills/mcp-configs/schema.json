@@ -1,0 +1,23 @@
+{
+  "mcp_version": "2026.Q2",
+  "mcp_servers": {
+    "local-filesystem-gate": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."],
+      "env": { "PERMITTED_PATHS": ["."] }
+    },
+    "gitnexus-memory-bridge": {
+      "command": "npx",
+      "args": ["-y", "@gitnexus/server-memory-sync"],
+      "env": {
+        "MEMORY_STORE_PATH": "./memory-vault/project-state-history.json",
+        "SOKG_GRAPH_PATH": "./memory-vault/gitnexus-sokg.json"
+      }
+    },
+    "firebase-studio-cli-adapter": {
+      "command": "npx",
+      "args": ["-y", "@firebase/server-studio-cli"],
+      "env": { "FIREBASE_PROJECT_ID": "Aether_Forge" }
+    }
+  }
+}

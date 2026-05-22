@@ -1,0 +1,36 @@
+# --- Dependencies ---
+node_modules/
+aether-forge-app/node_modules/
+.opencode/node_modules/
+
+# --- Next.js build ---
+aether-forge-app/.next/
+aether-forge-app/out/
+aether-forge-app/next-env.d.ts
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+
+# --- Logs ---
+*.log
+firebase-debug.log
+
+# --- OS metadata ---
+.DS_Store
+Thumbs.db
+
+# --- Editor temp files ---
+*.swp
+*.swo
+*~
+
+# --- TypeScript ---
+*.tsbuildinfo
+
+# --- Firebase cache ---
+.firebase/

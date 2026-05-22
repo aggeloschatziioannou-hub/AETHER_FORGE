@@ -1,0 +1,11 @@
+{
+    "$schema": "https://open-code.ai/config.json",
+    "model": "",
+    "theme": "opencode",
+    "autoupdate": true,
+    "permission": {
+      "bash": "ask",
+      "edit": "ask",
+      "read": "allow"
+    }
+  }

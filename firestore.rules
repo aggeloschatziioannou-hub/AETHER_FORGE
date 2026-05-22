@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    function isValidNode(node) {
+      return node.nodeId is string 
+        && node.position.x is number 
+        && node.position.y is number
+        && node.state in ['active', 'provisioning', 'quarantined', 'halted'];
+    }
+    match /canvases/{canvasId} {
+      allow read, write: if isAuthenticated();
+      match /nodes/{nodeId} {
+        allow read: if isAuthenticated();
+        allow write: if isAuthenticated() && isValidNode(request.resource.data);
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "aether-forge-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format:check": "prettier --check \"src/**/*.{ts,tsx,md}\"",
+        "format:fix": "prettier --write \"src/**/*.{ts,tsx,md}\""
+    },
+    "dependencies": {
+        "next": "15.5.0",
+        "react": "19.0.0",
+        "react-dom": "19.0.0",
+        "firebase": "10.8.0",
+        "typescript": "5.4.2",
+        "tailwindcss": "4.0.0",
+        "lucide-react": "0.400.0"
+    },
+    "devDependencies": {
+        "@types/node": "20.11.24",
+        "@types/react": "19.0.0",
+        "@types/react-dom": "19.0.0",
+        "prettier": "3.2.5"
+    },
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

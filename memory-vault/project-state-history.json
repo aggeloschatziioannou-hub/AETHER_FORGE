@@ -1,0 +1,64 @@
+{
+  "evolution_timeline": [
+    {
+      "timestamp": "2026-05-21T09:59:01.862350+00:00",
+      "total_files": 14,
+      "summary_delta": {
+        "has_context_lock": true,
+        "has_mcp_wiring": true
+      }
+    },
+    {
+      "timestamp": "2026-05-21T10:10:11.272044+00:00",
+      "total_files": 17,
+      "summary_delta": {
+        "has_context_lock": true,
+        "has_mcp_wiring": true
+      }
+    },
+    {
+      "timestamp": "2026-05-21T10:17:17.050781+00:00",
+      "total_files": 17,
+      "completion_score": 75.0,
+      "environment_signatures": {
+        "node": "v20.19.1",
+        "npm": "10.8.2",
+        "firebase": "15.1.0",
+        "git": "git version 2.47.2"
+      }
+    },
+    {
+      "timestamp": "2026-05-21T10:40:38.927236+00:00",
+      "total_files": 18,
+      "completion_score": 100.0,
+      "environment_signatures": {
+        "node": "v20.19.1",
+        "npm": "10.8.2",
+        "firebase": "15.1.0",
+        "git": "git version 2.47.2"
+      }
+    },
+    {
+      "timestamp": "2026-05-21T10:48:31.048855+00:00",
+      "total_files": 20,
+      "completion_score": 100.0,
+      "environment_signatures": {
+        "node": "v20.19.1",
+        "npm": "10.8.2",
+        "firebase": "15.1.0",
+        "git": "git version 2.47.2"
+      }
+    },
+    {
+      "timestamp": "2026-05-21T10:51:05.622107+00:00",
+      "total_files": 22,
+      "completion_score": 100.0,
+      "environment_signatures": {
+        "node": "v20.19.1",
+        "npm": "10.8.2",
+        "firebase": "15.1.0",
+        "git": "git version 2.47.2"
+      }
+    }
+  ]
+}

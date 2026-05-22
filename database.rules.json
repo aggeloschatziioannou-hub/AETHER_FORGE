@@ -1,0 +1,22 @@
+{
+    "rules": {
+      ".read": "auth != null",
+      ".write": "auth != null",
+      "presence": {
+        "$canvasId": {
+          "$userId": {
+            ".validate": "auth.uid === $userId",
+            "cursor": {
+              "x": { ".validate": "newData.isNumber()" },
+              "y": { ".validate": "newData.isNumber()" }
+            },
+            "viewportOffset": {
+              "x": { ".validate": "newData.isNumber()" },
+              "y": { ".validate": "newData.isNumber()" }
+            },
+            "lastActive": { ".validate": "newData.val() <= now" }
+          }
+        }
+      }
+    }
+  }

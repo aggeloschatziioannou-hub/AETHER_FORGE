@@ -1,0 +1,80 @@
+{
+  "scan_timestamp": "2026-05-21T10:10:11.272044+00:00",
+  "total_operational_nodes": 17,
+  "environment_calibrated": true,
+  "mcp_gateway_active": true,
+  "infrastructure_contracts": {
+    "firestore_rules": false,
+    "database_rules": false
+  },
+  "tracked_files": {
+    "./README.md": {
+      "size_bytes": 216,
+      "last_modified": "2026-05-21T09:28:41.477928+00:00"
+    },
+    "./memory-vault/gitnexus-sokg.json": {
+      "size_bytes": 732,
+      "last_modified": "2026-05-21T10:04:14.202377+00:00"
+    },
+    "./memory-vault/todo.md": {
+      "size_bytes": 529,
+      "last_modified": "2026-05-21T09:48:40.222844+00:00"
+    },
+    "./memory-vault/evolution-ledger.json": {
+      "size_bytes": 245,
+      "last_modified": "2026-05-21T09:40:55.851332+00:00"
+    },
+    "./memory-vault/project-state-history.json": {
+      "size_bytes": 223,
+      "last_modified": "2026-05-21T09:59:01.864434+00:00"
+    },
+    "./memory-vault/analytics/blueprint.json": {
+      "size_bytes": 2079,
+      "last_modified": "2026-05-21T09:59:01.863434+00:00"
+    },
+    "./scripts/consolidate-memory.py": {
+      "size_bytes": 1409,
+      "last_modified": "2026-05-21T09:42:53.427603+00:00"
+    },
+    "./scripts/project-analytics.py": {
+      "size_bytes": 3099,
+      "last_modified": "2026-05-21T09:58:21.283543+00:00"
+    },
+    "./.agent-skills/project-analyzer.md": {
+      "size_bytes": 1833,
+      "last_modified": "2026-05-21T09:43:55.282531+00:00"
+    },
+    "./.agent-skills/context.mdc": {
+      "size_bytes": 1003,
+      "last_modified": "2026-05-21T09:36:31.345976+00:00"
+    },
+    "./.agent-skills/design-system.skill.md": {
+      "size_bytes": 994,
+      "last_modified": "2026-05-21T10:04:41.680011+00:00"
+    },
+    "./.agent-skills/mcp-configs/schema.json": {
+      "size_bytes": 680,
+      "last_modified": "2026-05-21T10:05:08.036537+00:00"
+    },
+    "./aether-forge-app/next.config.ts": {
+      "size_bytes": 288,
+      "last_modified": "2026-05-21T09:47:41.838248+00:00"
+    },
+    "./aether-forge-app/package.json": {
+      "size_bytes": 605,
+      "last_modified": "2026-05-21T09:30:32.645586+00:00"
+    },
+    "./aether-forge-app/tsconfig.json": {
+      "size_bytes": 653,
+      "last_modified": "2026-05-21T09:48:21.618061+00:00"
+    },
+    "./.idx/airules.md": {
+      "size_bytes": 4760,
+      "last_modified": "2026-05-21T09:06:04.354819+00:00"
+    },
+    "./.idx/dev.nix": {
+      "size_bytes": 1715,
+      "last_modified": "2026-05-21T09:53:01.741912+00:00"
+    }
+  }
+}

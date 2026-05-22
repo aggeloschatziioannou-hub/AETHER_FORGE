@@ -1,0 +1,374 @@
+{
+  "generated_at": "2026-05-22T07:59:45.073808+00:00",
+  "environment": {
+    "python_version": "3.11.11",
+    "platform": "linux",
+    "timestamp": "2026-05-22T07:59:45.073808+00:00",
+    "node": "v22.16.0",
+    "npm": "10.9.2",
+    "firebase": "15.1.0",
+    "git": "git version 2.47.2"
+  },
+  "git": {
+    "branch": "main",
+    "recent_commits": [
+      "74dcaba Initialized workspace with Firebase Studio"
+    ]
+  },
+  "app": {
+    "name": "aether-forge-app",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "format:check": "prettier --check \"src/**/*.{ts,tsx,md}\"",
+      "format:fix": "prettier --write \"src/**/*.{ts,tsx,md}\""
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom",
+      "firebase",
+      "typescript",
+      "tailwindcss",
+      "lucide-react"
+    ],
+    "devDependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "prettier"
+    ]
+  },
+  "tasks": {
+    "completed": [
+      "Task 0: Initialize Firebase Console Projects Panel Rules.",
+      "Task 1: Initialize local application layer configuration files.",
+      "Task 2: Build the core Math-Native client hooks for viewport parsing (`useCanvasViewport.ts`).",
+      "Task 3: Embed real-time cursor presence tracking across Firebase RTDB lines (`useRealtimePresence.ts`).",
+      "STAGE 01 :: Infrastructure Sync & Cloud Alignment -> Completed",
+      "STAGE 04 :: Environment & Tooling Fortification -> See `./memory-vault/stage_outputs/04_env_success.txt`",
+      "STAGE 05 :: Code Quality & Consistency Gateway -> Target: ESLint/Prettier Config Files",
+      "STAGE 07 :: AI Agent Skillset Evolution -> Target: lint-and-format skill + updated project-analyzer"
+    ],
+    "pending": [
+      "STAGE 06 :: Custom Viewport Transformation Calculus -> Target Hook: `useCanvasViewport.ts`",
+      "STAGE 07 :: Throttled Multi-User Collaborative Presence Channel -> Target Hook: `useRealtimePresence.ts`",
+      "STAGE 08 :: Parent Stage Mesh Container Assembly -> Target Interface: `CanvasMainStage.tsx`"
+    ],
+    "stages": [
+      {
+        "id": 1,
+        "title": "Infrastructure Sync & Cloud Alignment",
+        "status": "Completed",
+        "done": true
+      },
+      {
+        "id": 4,
+        "title": "Environment & Tooling Fortification",
+        "status": "See `./memory-vault/stage_outputs/04_env_success.txt`",
+        "done": true
+      },
+      {
+        "id": 5,
+        "title": "Code Quality & Consistency Gateway",
+        "status": "Target: ESLint/Prettier Config Files",
+        "done": true
+      },
+      {
+        "id": 7,
+        "title": "AI Agent Skillset Evolution",
+        "status": "Target: lint-and-format skill + updated project-analyzer",
+        "done": true
+      },
+      {
+        "id": 6,
+        "title": "Custom Viewport Transformation Calculus",
+        "status": "Target Hook: `useCanvasViewport.ts`",
+        "done": false
+      },
+      {
+        "id": 7,
+        "title": "Throttled Multi-User Collaborative Presence Channel",
+        "status": "Target Hook: `useRealtimePresence.ts`",
+        "done": false
+      },
+      {
+        "id": 8,
+        "title": "Parent Stage Mesh Container Assembly",
+        "status": "Target Interface: `CanvasMainStage.tsx`",
+        "done": false
+      }
+    ]
+  },
+  "file_inventory": {
+    "total_count": 39,
+    "total_size_bytes": 131095,
+    "files": [
+      {
+        "path": ".geminiignore",
+        "size_bytes": 887,
+        "ext": ""
+      },
+      {
+        "path": ".gitignore",
+        "size_bytes": 472,
+        "ext": ""
+      },
+      {
+        "path": "AGENTS.md",
+        "size_bytes": 954,
+        "ext": ".md"
+      },
+      {
+        "path": "CLAUDE.md",
+        "size_bytes": 2613,
+        "ext": ".md"
+      },
+      {
+        "path": "README.md",
+        "size_bytes": 216,
+        "ext": ".md"
+      },
+      {
+        "path": "database.rules.json",
+        "size_bytes": 616,
+        "ext": ".json"
+      },
+      {
+        "path": "firestore.rules",
+        "size_bytes": 643,
+        "ext": ".rules"
+      },
+      {
+        "path": "opencode.json",
+        "size_bytes": 869,
+        "ext": ".json"
+      },
+      {
+        "path": "opencode.json.tui-migration.bak",
+        "size_bytes": 212,
+        "ext": ".bak"
+      },
+      {
+        "path": "package.json",
+        "size_bytes": 367,
+        "ext": ".json"
+      },
+      {
+        "path": "memory-vault/evolution-ledger.json",
+        "size_bytes": 245,
+        "ext": ".json"
+      },
+      {
+        "path": "memory-vault/new-chat-prompt.md",
+        "size_bytes": 5455,
+        "ext": ".md"
+      },
+      {
+        "path": "memory-vault/project-instructions.db",
+        "size_bytes": 53248,
+        "ext": ".db"
+      },
+      {
+        "path": "memory-vault/project-state-history.json",
+        "size_bytes": 1561,
+        "ext": ".json"
+      },
+      {
+        "path": "memory-vault/todo.md",
+        "size_bytes": 3872,
+        "ext": ".md"
+      },
+      {
+        "path": "memory-vault/analytics/blueprint.json",
+        "size_bytes": 2491,
+        "ext": ".json"
+      },
+      {
+        "path": "memory-vault/analytics/project-state-bundle.json",
+        "size_bytes": 8259,
+        "ext": ".json"
+      },
+      {
+        "path": "memory-vault/stage_outputs/01_infra_success.txt",
+        "size_bytes": 233,
+        "ext": ".txt"
+      },
+      {
+        "path": "memory-vault/stage_outputs/04_env_success.txt",
+        "size_bytes": 190,
+        "ext": ".txt"
+      },
+      {
+        "path": "memory-vault/stage_outputs/05_quality_success.txt",
+        "size_bytes": 213,
+        "ext": ".txt"
+      },
+      {
+        "path": "scripts/consolidate-memory.py",
+        "size_bytes": 1409,
+        "ext": ".py"
+      },
+      {
+        "path": "scripts/macro-engine.py",
+        "size_bytes": 7630,
+        "ext": ".py"
+      },
+      {
+        "path": "scripts/query-vault.py",
+        "size_bytes": 1457,
+        "ext": ".py"
+      },
+      {
+        "path": "scripts/run-stage-01.py",
+        "size_bytes": 2349,
+        "ext": ".py"
+      },
+      {
+        "path": "scripts/run-stage-04.py",
+        "size_bytes": 2214,
+        "ext": ".py"
+      },
+      {
+        "path": "scripts/run-stage-05.py",
+        "size_bytes": 2167,
+        "ext": ".py"
+      },
+      {
+        "path": "scripts/seed-instructions.py",
+        "size_bytes": 19298,
+        "ext": ".py"
+      },
+      {
+        "path": "aether-forge-app/.eslintrc.json",
+        "size_bytes": 308,
+        "ext": ".json"
+      },
+      {
+        "path": "aether-forge-app/.prettierignore",
+        "size_bytes": 32,
+        "ext": ""
+      },
+      {
+        "path": "aether-forge-app/.prettierrc",
+        "size_bytes": 126,
+        "ext": ""
+      },
+      {
+        "path": "aether-forge-app/next-env.d.ts",
+        "size_bytes": 262,
+        "ext": ".ts"
+      },
+      {
+        "path": "aether-forge-app/next.config.ts",
+        "size_bytes": 288,
+        "ext": ".ts"
+      },
+      {
+        "path": "aether-forge-app/package.json",
+        "size_bytes": 871,
+        "ext": ".json"
+      },
+      {
+        "path": "aether-forge-app/tsconfig.json",
+        "size_bytes": 886,
+        "ext": ".json"
+      },
+      {
+        "path": "aether-forge-app/src/wdyr.ts",
+        "size_bytes": 264,
+        "ext": ".ts"
+      },
+      {
+        "path": "aether-forge-app/src/app/layout.tsx",
+        "size_bytes": 255,
+        "ext": ".tsx"
+      },
+      {
+        "path": "aether-forge-app/src/app/page.tsx",
+        "size_bytes": 1817,
+        "ext": ".tsx"
+      },
+      {
+        "path": "aether-forge-app/src/hooks/useCanvasViewport.ts",
+        "size_bytes": 3282,
+        "ext": ".ts"
+      },
+      {
+        "path": "aether-forge-app/src/hooks/useRealtimePresence.ts",
+        "size_bytes": 2564,
+        "ext": ".ts"
+      }
+    ]
+  },
+  "gitnexus": {
+    "files": 32,
+    "nodes": 231,
+    "edges": 255,
+    "communities": 9,
+    "processes": 1,
+    "embeddings": 0
+  },
+  "evolution_log": [
+    {
+      "id": 8,
+      "timestamp": "2026-05-22 07:59:31",
+      "agent": "opencode",
+      "type": "skill_evolution",
+      "summary": "Task 7: Created lint-and-format skill + updated project-analyzer.md"
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-05-21 14:22:11",
+      "agent": "opencode",
+      "type": "install",
+      "summary": "Installed plugins + skills collection for dramatic workflow improvement"
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-05-21 14:12:08",
+      "agent": "opencode",
+      "type": "install",
+      "summary": "Installed Deep-Research-skills"
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-05-21 14:05:34",
+      "agent": "opencode",
+      "type": "config_add_brave_search",
+      "summary": "Added Brave Search MCP for research"
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-05-21 13:53:11",
+      "agent": "opencode",
+      "type": "config_fix_v2",
+      "summary": "Swapped project-instructions MCP to official mcp-server-sqlite via uvx"
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-05-21 13:49:34",
+      "agent": "opencode",
+      "type": "config_fix",
+      "summary": "Fixed MCP+plugin config: superpowers moved to plugin array, sqlite replaced with custom server"
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-05-21 13:32:38",
+      "agent": "opencode",
+      "type": "system-init",
+      "summary": "Built comprehensive instruction DB (25 sections + evolution table)"
+    },
+    {
+      "id": 1,
+      "timestamp": "2026-05-21 13:30:45",
+      "agent": "seed-instructions.py",
+      "type": "system-init",
+      "summary": "Initialized comprehensive instruction database"
+    }
+  ],
+  "ledger_entries": 1
+}

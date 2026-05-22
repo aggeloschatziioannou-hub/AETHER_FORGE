@@ -1,0 +1,38 @@
+{
+  "$schema": "https://open-code.ai/config.json",
+  "model": "",
+  "autoupdate": true,
+  "permission": {
+    "bash": "ask",
+    "edit": "ask",
+    "read": {
+      "*": "allow",
+      ".env": "deny",
+      ".env.*": "deny",
+      "*.key": "deny",
+      "*.pem": "deny",
+      "*.crt": "deny"
+    },
+    "skill": {
+      "*": "allow"
+    }
+  },
+  "mcp": {
+    "gitnexus": {
+      "type": "local",
+      "enabled": true,
+      "command": ["/home/user/.global_modules/bin/gitnexus", "mcp"]
+    },
+    "project-instructions": {
+      "type": "local",
+      "enabled": true,
+      "command": ["/home/user/.local/bin/uvx", "mcp-server-sqlite", "--db-path", "memory-vault/project-instructions.db"]
+    }
+  },
+  "plugin": [
+    "superpowers@git+https://github.com/obra/superpowers.git",
+    "opencode-skills-collection@latest",
+    "opencode-notify",
+    "opencode-snip"
+  ]
+}
